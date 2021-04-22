@@ -1,0 +1,42 @@
+.light-font {
+    font-family: 'Poppins', sans-serif;
+}
+
+.heavy-font {
+    font-weight: 500;
+}
+
+.light-outline {
+    border: .5px solid lightgray;
+}
+
+.light-padded-block {
+    padding: 3%;
+}
+
+.light-shadow {
+    border-radius: 28px;
+    background: #ffffff;
+    box-shadow:  18px 18px 36px #d9d9d9,
+                -18px -18px 36px #ffffff;
+}
+
+.line-hoverable:hover {
+    cursor: pointer;
+    background-color: rgba(216, 216, 216, 0.2);
+    transition: .5s all;
+}
+
+.item-hoverable:hover {
+    cursor: pointer;
+    color: rgba(216, 216, 216, 0.2);
+    transition: .5s all;
+}
+
+.opaqe-hover:hover {
+    fill-opacity: .5;
+}
+
+.slow-transition {
+    transition: 1s all;
+}
