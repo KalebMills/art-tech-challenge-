@@ -99,7 +99,9 @@ const db = {
     }
   ],
   userState: {
-
+    isCorrectAnswer: false,
+    selectedOption: '',
+    isSubmittedState: false
   }
 }
 
@@ -114,7 +116,6 @@ function server() {
   app.get('/flashcard-blocks', (req, res) => res.send(db.flashcardBlocks))
   app.get('/knowledge-check-blocks', (req, res) => res.send(db.knowledgeCheckBlocks))
   app.put('/user/state', express.json(), (req, res) => {
-    console.log(JSON.stringify(req.body))
     db.userState = { ...db.userState, ...req.body }
     res.send(db.userState)
   })
